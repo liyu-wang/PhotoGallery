@@ -55,7 +55,7 @@ public class PhotoGalleryFragment extends Fragment {
             }
         });
         mThumbnailDownloader.start();
-        mThumbnailDownloader.getLooper();
+        mThumbnailDownloader.getLooper(); // make sure onLooperPrepared() has been called
         Log.i(TAG, "Background thread started");
     }
 
